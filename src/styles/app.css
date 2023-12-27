@@ -2129,7 +2129,7 @@ body.opened{
     max-width: 240px;
     line-height: 1.5em;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .kg-embed-card{
