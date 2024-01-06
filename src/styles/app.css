@@ -2129,7 +2129,7 @@ body.opened{
     max-width: 240px;
     line-height: 1.5em;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .kg-embed-card{
@@ -2252,6 +2252,47 @@ figcaption{
 .kg-callout-card-accent{
     color: var(--color-white-base);
     background-color: #ff1a75;
+}
+
+.kg-file-card{
+    padding: .8rem;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px rgba(124, 139, 154, 0.25);
+    position: relative;
+    display: block;
+    margin: 0.4em 0 1.6em;
+}
+.kg-file-card :hover{
+    text-decoration: none;
+}
+
+.kg-file-card-container{
+    color: var(--color-base);
+    display: flex;
+    justify-content: space-between
+}
+
+.kg-file-card-icon{
+    width: 20%;
+    max-width: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-border);
+    border-radius: 3px;
+}
+
+.kg-file-card-icon svg{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.kg-file-card-metadata{
+    display: flex;
+    font-size: 80%;
+}
+
+.kg-file-card-filesize{
+    margin-left: .8rem ;
 }
 
 .kg-audio-card,
